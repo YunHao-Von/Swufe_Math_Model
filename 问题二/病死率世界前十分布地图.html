@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/world.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/roma.js"></script>
+
+</head>
+<body>
+    <div id="9021a114c8904d26b2c20b77a992077f" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_9021a114c8904d26b2c20b77a992077f = echarts.init(
+            document.getElementById('9021a114c8904d26b2c20b77a992077f'), 'roma', {renderer: 'canvas'});
+        var option_9021a114c8904d26b2c20b77a992077f = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "map",
+            "name": "\u75c5\u6b7b\u7387",
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "mapType": "world",
+            "data": [
+                {
+                    "name": "Yemen",
+                    "value": 0.291206151
+                },
+                {
+                    "name": "Mexico",
+                    "value": 0.092287898
+                },
+                {
+                    "name": "Ecuador",
+                    "value": 0.069119019
+                },
+                {
+                    "name": "Sudan",
+                    "value": 0.063279601
+                },
+                {
+                    "name": "Bolivia",
+                    "value": 0.06153636
+                },
+                {
+                    "name": "Chad",
+                    "value": 0.058654399
+                },
+                {
+                    "name": "Egypt",
+                    "value": 0.057046784
+                },
+                {
+                    "name": "Syria",
+                    "value": 0.054170934
+                },
+                {
+                    "name": "China",
+                    "value": 0.050497208
+                },
+                {
+                    "name": "Liberia",
+                    "value": 0.049522673
+                }
+            ],
+            "roam": true,
+            "aspectScale": 0.75,
+            "nameProperty": "name",
+            "selectedMode": false,
+            "zoom": 1,
+            "mapValueCalculation": "sum",
+            "showLegendSymbol": true,
+            "emphasis": {},
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u75c5\u6b7b\u7387"
+            ],
+            "selected": {
+                "\u75c5\u6b7b\u7387": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u75c5\u6b7b\u7387\u4e16\u754c\u524d\u5341\u5206\u5e03\u5730\u56fe",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 0.291206151,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    }
+};
+        chart_9021a114c8904d26b2c20b77a992077f.setOption(option_9021a114c8904d26b2c20b77a992077f);
+    </script>
+</body>
+</html>

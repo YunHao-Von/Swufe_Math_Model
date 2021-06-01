@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts-gl.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/china.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/world.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/romantic.js"></script>
+
+</head>
+<body>
+    <div id="416a785e2e8847559c21918f76745c24" style="width:900px; height:500px;"></div>
+    <script>
+		var canvas_416a785e2e8847559c21918f76745c24 = document.createElement('canvas');
+        var mapChart_416a785e2e8847559c21918f76745c24 = echarts.init(
+		     canvas_416a785e2e8847559c21918f76745c24, 'romantic', {width: 4096, height: 2048, renderer: 'canvas'});
+        var mapOption_416a785e2e8847559c21918f76745c24 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "map",
+            "name": "World Population",
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "mapType": "world",
+            "data": [
+                {
+                    "name": "United States",
+                    "value": 98044421
+                },
+                {
+                    "name": "India",
+                    "value": 24515213
+                },
+                {
+                    "name": "United Kingdom",
+                    "value": 14043961
+                },
+                {
+                    "name": "Brazil",
+                    "value": 12691659
+                },
+                {
+                    "name": "Turkey",
+                    "value": 8619993
+                },
+                {
+                    "name": "Indonesia",
+                    "value": 7411095
+                },
+                {
+                    "name": "Russia",
+                    "value": 7130216
+                },
+                {
+                    "name": "Chile",
+                    "value": 6576237
+                },
+                {
+                    "name": "Germany",
+                    "value": 6254723
+                },
+                {
+                    "name": "France",
+                    "value": 6103973
+                }
+            ],
+            "roam": true,
+            "aspectScale": 0.75,
+            "nameProperty": "name",
+            "selectedMode": false,
+            "zoom": 1,
+            "mapValueCalculation": "sum",
+            "showLegendSymbol": false,
+            "emphasis": {}
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "World Population"
+            ],
+            "selected": {
+                "World Population": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 98044421,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u5b8c\u6210\u75ab\u82d7\u6ce8\u5c04\u4eba\u6570\u4e16\u754c\u65b0\u589e\u786e\u8bca\u4eba\u6570\u524d\u5341\u5206\u5e03\u5730\u56fe",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        mapChart_416a785e2e8847559c21918f76745c24.setOption(mapOption_416a785e2e8847559c21918f76745c24);
+
+		var chart_416a785e2e8847559c21918f76745c24 = echarts.init(
+        document.getElementById('416a785e2e8847559c21918f76745c24'), 'romantic', {renderer: 'canvas'});
+		var options_416a785e2e8847559c21918f76745c24 = {
+           "globe": {
+           "show": true,
+		   "baseTexture": mapChart_416a785e2e8847559c21918f76745c24,
+           shading: 'lambert',
+            light: {
+                ambient: {
+                    intensity: 0.6
+                },
+                main: {
+                    intensity: 0.2
+                }
+             }
+
+		   }};
+		chart_416a785e2e8847559c21918f76745c24.setOption(options_416a785e2e8847559c21918f76745c24);
+    </script>
+</body>
+</html>

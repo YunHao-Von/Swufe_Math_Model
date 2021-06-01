@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/world.js"></script>
+
+</head>
+<body>
+    <div id="638b0ee90635465e9156aa33a2f3cc9e" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_638b0ee90635465e9156aa33a2f3cc9e = echarts.init(
+            document.getElementById('638b0ee90635465e9156aa33a2f3cc9e'), 'dark', {renderer: 'canvas'});
+        var option_638b0ee90635465e9156aa33a2f3cc9e = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "map",
+            "name": "\u65b0\u589e\u786e\u8bca\u6570",
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "mapType": "world",
+            "data": [
+                {
+                    "name": "United States",
+                    "value": 823225
+                },
+                {
+                    "name": "India",
+                    "value": 231511
+                },
+                {
+                    "name": "Brazil",
+                    "value": 53347
+                },
+                {
+                    "name": "Russia",
+                    "value": 32734
+                },
+                {
+                    "name": "France",
+                    "value": 29373
+                },
+                {
+                    "name": "United Kingdom",
+                    "value": 27562
+                },
+                {
+                    "name": "Italy",
+                    "value": 21066
+                },
+                {
+                    "name": "Turkey",
+                    "value": 16998
+                },
+                {
+                    "name": "Spain",
+                    "value": 13872
+                },
+                {
+                    "name": "Argentina",
+                    "value": 13750
+                }
+            ],
+            "roam": true,
+            "aspectScale": 0.75,
+            "nameProperty": "name",
+            "selectedMode": false,
+            "zoom": 1,
+            "mapValueCalculation": "sum",
+            "showLegendSymbol": true,
+            "emphasis": {},
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u65b0\u589e\u786e\u8bca\u6570"
+            ],
+            "selected": {
+                "\u65b0\u589e\u786e\u8bca\u6570": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "2020\u5e7412\u670820\u65e5\u4e16\u754c\u65b0\u589e\u786e\u8bca\u4eba\u6570\u524d\u5341\u5206\u5e03\u5730\u56fe",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 823225,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    }
+};
+        chart_638b0ee90635465e9156aa33a2f3cc9e.setOption(option_638b0ee90635465e9156aa33a2f3cc9e);
+    </script>
+</body>
+</html>
